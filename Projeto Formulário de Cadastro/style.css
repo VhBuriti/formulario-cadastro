@@ -1,0 +1,240 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#cadastro{
+    width: 700px;
+    height: 820px;
+    background-color: #545871;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 7px 5px rgb(22, 24, 33);
+    align-items: center;
+}
+
+body{
+    display: flex;
+    align-items:center;
+    height: 100vh;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+
+form h2{
+    font-size: 30px;
+    color:#ebd0ce;
+
+}
+
+form input[type="text"], input[type="number"]{
+    border: none;
+    width: 100%;
+    height: 35px;
+    margin: 25px 0px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#tittle{
+    display: flex;
+    justify-content: center;
+}
+
+#DDD{
+    width: 10%;
+    margin-right: 10px;
+}
+
+
+#cep{
+    width: 30%;
+    margin-right: 10px;
+}
+
+#address_num{
+    width: 30%;
+    margin-left: 10px;
+}
+
+#complemento input{
+    width: 95px;
+    margin-left: 10px;
+}
+
+
+#complemento{
+    display: none;
+}
+
+.address, .address_2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bairro, #cidade, #estado{
+    width: 32%;  
+}
+
+#bairro, #cidade{
+    margin-right: 10px;
+}
+
+
+
+form h3{
+    color: rgb(222, 203, 202);
+    font-size: 20px;
+}
+
+.cadastrar{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar button{
+    margin-top: 35px;
+    width: 450px;
+    height: 65px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color:#ebd0ce;
+    color: #423838;
+    box-shadow: 1px 1px 4px #ebd0ce;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+#pessoas_cadastradas{
+    display: none;
+    width: auto;
+    height: auto;
+    color: white;
+    background-color: rgb(0, 0, 65);
+    border-radius: 15px;
+    justify-content: center;
+}
+
+#pessoas_cadastradas th{
+    padding: 20px;
+    border-bottom: 1px solid white;
+
+}
+
+.table_top{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    margin: 10px;
+    width: 170px;
+    height: 60px;
+    color: #e7e7e7;
+    border: 2px black solid;
+    font-size: 15px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#tbody{
+    display: block;
+}
+#tbody td{
+    padding: 25px;
+    border-bottom: 1px white dashed;
+}
+
+.table_top tr{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.numero_cadastros{
+    background: black;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero_cadastros h2{
+    font-size: 12px;
+}
+
+#users_number{
+    color: red;
+    padding: 10px;
+}
+
+#address_comple button {
+    width: 90px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 13px;
+    border: 1px black solid;
+    color: white;
+    background-color: #545871;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.clear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    color: rgb(240, 110, 110);
+}
+
+
+.formulario_cadastro{
+    width: 510px;
+}
+
+.phone_number, .person_name, .e-mail{
+    display: flex;
+    align-items: center;
+}
+
+
+#btn_submit:hover{
+    transition: all 1s;
+    border-radius: 100px;
+}
+
+.clear:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transition:all 0.5s;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto Módulo 4</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div id="cadastro">
+                <div class="formulario_cadastro">
+                    <form id="forms">
+                        <div id="tittle">
+                            <h2>Formulário de registro</h2>
+                        </div>
+                        
+                        <div class="personal_data">
+                            <h3>Dados Pessoais</h3>
+
+                            <div class="person_name">
+                                <input type="text" id="name" placeholder="Nome e sobrenome*" name="name" title="Escreva seu nome e sobrenome" required/>
+                                <div class="clear" onclick="clean_name()">X</div>
+                            </div>
+
+                        </div>
+        
+                        <div class="contact_info">
+                            <h3>Dados para contato</h3>
+
+                            <div class="e-mail">
+                                <input type="text" id="e-mail" placeholder="E-mail*" name="e-mail" title="Escreva seu e-mail" required/>
+                                <div class="clear"onclick="clean_email()">X</div>
+                            </div>
+
+                            <div class="phone_number">
+                                <input id="DDD" type="number" placeholder="DDD*" name="DDD" title="Escreva seu DDD - APENAS NÚMEROS!" required/>
+                            
+                                <input type="number" id="cell_number" name="cell_number" placeholder="Número do celular*" title="Escreva seu número do celular - APENAS NÚMEROS!" required/>
+                                <div class="clear" onclick="clean_phone()">X</div>
+                            </div>
+
+                        </div>
+        
+        
+        
+                        <div class="endereco">
+                            <h3>Endereço</h3>
+                            <div class="address">
+                                <input id="cep" type="number" placeholder="CEP*" name="cep" title="Escreva seu CEP - APENAS NÚMEROS!" required/>
+            
+                                <input id="street_name" type="text" placeholder="Rua*" name="street_name" title="Escreva o nome da sua rua" required/>
+            
+                                <input id="address_num" type="number" placeholder="Número*" name="address_num" title="Escreva o número da sua residência - APENAS NÚMEROS!" required/>
+        
+
+                                <div id="address_comple" title="Botão para habilitar o complemento, caso necessário">
+                                    <button id="btn_comple" type="button" onclick="to_comple()">Complemento</button>
+                                </div>
+
+                                <div id="complemento">
+                                    <input id="complement"type="text" name="complement" placeholder="Complemento*" title="Escreva o complemento">
+                                </div>
+
+                                <div class="clear" onclick="clean_address1()">X</div>
+
+                            </div>
+                            
+
+
+                            <div class="address_2">
+                                <input id="bairro" type="text" placeholder="Bairro*" name="bairro" title="Escreva o nome do seu bairro" required/>
+                                <input id="cidade" type="text" placeholder="Cidade*" name="cidade" title="Escreva o nome da sua cidade" required/>
+                                <input id="estado" type="text" placeholder="Estado*" name="estado" title="Escreva o nome do seu Estado" required/>
+                                <div class="clear" onclick="clean_address2()">X</div>
+
+        
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="cadastrar">
+                            <button title="Criar cadastro" id="btn_submit" type="button" onclick="create_person()">CADASTRAR PESSOA</button>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+    
+            <div id="pessoas_cadastradas">
+                <table>
+                    <thead class="table_top">
+                        <tr>
+                            <th>Pessoas Cadastradas</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+
+
+            <div class="buttons">
+                <button type="button" onclick="to_cadastro()">Formulário de cadastro</button>
+                <button type="button" onclick="to_pessoas_cadastradas()">Pessoas cadastras</button>
+
+                <div class="numero_cadastros">
+                    <h2>Número de pessoas cadastras:</h2>
+
+                    <div id="users_number"></div>
+                </div>
+            </div>
+            
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
